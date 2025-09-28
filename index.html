@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+
+                <!-- Hamburger & Close Icons -->
+                <div id="menu-icon" onclick="openMenu()">☰</div>
+                <div id="close-icon" onclick="closeMenu()">✖</div>
+
+                <!-- Navigation Links -->
+                <ul id="navList">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="headerText">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Binay</span> from <br>India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="content">
+            <div class="img">
+                <img src="images/user.png" alt="">
+            </div>
+            <div id="aboutSec">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm Binay Pal, a passionate and driven B.Tech Computer Science Engineering student with a strong interest in full-stack development, AI integration, and building real-world applications that make life simpler and smarter.
+                    <br><br>
+                    With a solid foundation in <b>HTML, CSS, JavaScript, React.js, Node.js</b> and databases like MySQL & MongoDB, I've worked on diverse projects ranging from an AI-powered trip planner to a fitness and diet recommendation system. These experiences have honed my skills in both frontend and backend development, as well as API integration and user-centric design.
+                    <br><br>
+                    I love turning ideas into intuitive, functional digital solutions. Whether it's crafting responsive user interfaces or designing efficient backend architectures, I'm always excited to learn, build, and collaborate.
+                    <br><br>
+                    Currently, I'm expanding my knowledge in backend services, cloud deployment, and scalable architectures, with a goal to become a proficient Full Stack Developer.
+                </p>
+            
+                <div id="contentTitle">
+                    <p class="desc activeLink" onclick="openTab('skill' , event)">Skills</p>
+                    <p class="desc" onclick="openTab('Experience' , event)">Experience</p>
+                    <p class="desc" onclick="openTab('Education' , event)">Education</p>
+                </div>
+
+               <!-- Skills Section -->
+                <div class="tab active" id="skill">
+                    <div class="skills-scroll">
+                        <ul>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React.js</li>
+                            <li><span>Backend</span><br>Node.js, Express.js, REST APIs</li>
+                            <li><span>Databases</span><br>MySQL, MongoDB, SQLite</li>
+                            <li><span>Cloud & Deployment</span><br>Firebase, Render, Vercel, GitHub Pages</li>
+                            <li><span>UI/UX</span><br>Responsive design, Figma basics</li>
+                            <li><span>Other Tools</span><br>Git, GitHub, Postman, VS Code</li>
+                            <li><span>Extras</span><br>API Integration, Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <!-- Experience -->
+                <div class="tab" id="Experience">
+                    <ul>
+                        <li><span>Projects</span><br>AI Trip Planner, Fitness Recommendation System, Weather App</li>
+                        <li><span>Hackathons</span><br>Participated in SIH & college hackathons</li>
+                        <li><span>Internships</span><br>Worked on small-scale frontend/backend projects</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="tab" id="Education">
+                    <ul>
+                        <li><span>B.Tech (CSE)</span><br>Lokmanya Tilak College of Engineering</li>
+                        <li><span>Specialization</span><br>IoT & Cyber Security Including Blockchain</li>
+                        <li><span>Year</span><br>2021 – 2025 (Pursuing)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="title"><h1>My Work</h1></div>
+            <div id="workList">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Weather Website</h3>
+                        <p>A real-time weather web app built with OpenWeather API and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>AI Trip Planner</h3>
+                        <p>Smart travel planning app with React Native & AI recommendations.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Fitness & Diet Recommender</h3>
+                        <p>A Flask app suggesting workouts & diet plans based on user data.</p>
+                    </div>
+                </div>
+            </div>
+            <i class="btn">See more</i>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="leftRow">
+                    <h1>Contact Me</h1>
+                    <p>📧 Binaypal887@gmail.com</p>
+                    <p>📞 7738824018</p>
+
+                    <!-- Social Media Links -->
+                    <div class="socialIcon">
+                      <!-- GitHub (white icon) -->
+                        <a href="https://github.com/Binay0018" class="icon" target="_blank">
+                            <img src="https://img.icons8.com/ios-glyphs/48/ffffff/github.png" 
+                                alt="GitHub" width="35">
+                        </a>
+                        <a href="https://www.linkedin.com/in/binay-kumar-pal-000426269/" class="icon" target="_blank">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="35">
+                        </a>
+                        <a href="https://twitter.com/your-username" class="icon" target="_blank">
+                            <img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter" width="35">
+                        </a>
+                        <a href="https://yourportfolio.com" class="icon" target="_blank">
+                            <img src="https://img.icons8.com/fluency/48/domain.png" alt="Portfolio" width="35">
+                        </a>
+                    </div>
+
+                    <a href="images/my-cv.pdf" download class="cv">Download CV</a>
+                </div>
+                
+                <div class="rightRow">
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Enter your email-Id" required>
+                        <textarea name="Message" id="textArea" placeholder="Message" rows="6"></textarea>
+                        <button class="cv cv2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="copywrite">
+        <p>&copy; 2025 Binay Pal. All rights reserved.</p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
