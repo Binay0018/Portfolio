@@ -136,9 +136,9 @@ B.Tech Computer Science Engineering Student
 
 ### Connect With Me
 
-* GitHub: https://github.com/yourusername
+* GitHub: https://github.com/Binay0018
 * LinkedIn: https://linkedin.com/in/yourprofile
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* Email: [binaypal887@gmail.com](mailto:your-email@example.com)
 
 ## 📄 License
 
