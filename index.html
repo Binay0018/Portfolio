@@ -3,177 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Binay Pal | Full Stack Developer</title>
+    <meta name="description" content="Binay Pal – Full Stack Developer specializing in AI, Blockchain & Web Development. BTech CSE, India.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- ── NAVBAR ── -->
     <div id="header">
         <div id="container">
             <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
+                <a href="#header" class="logo">BP<span class="dot">.</span></a>
 
-                <!-- Hamburger & Close Icons -->
                 <div id="menu-icon" onclick="openMenu()">☰</div>
-                <div id="close-icon" onclick="closeMenu()">✖</div>
+                <div id="close-icon" onclick="closeMenu()">✕</div>
 
-                <!-- Navigation Links -->
                 <ul id="navList">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
+            <!-- ── HERO ── -->
             <div id="headerText">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I'm <span>Binay</span> from <br>India</h1>
+                <p class="hero-eyebrow"><span class="status-dot"></span> Open to opportunities</p>
+                <p class="hero-role">Full Stack Developer</p>
+                <h1>Hi, I'm <span>Binay</span><br>from India</h1>
+                <p class="hero-sub">Building AI · Blockchain · Full Stack solutions that matter.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Hackathons</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">7+</span>
+                        <span class="stat-label">Tech Stacks</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- About Section -->
+    <!-- ── ABOUT ── -->
     <div id="about">
         <div class="content">
             <div class="img">
-                <img src="images/user.png" alt="">
+                <img src="images/user.png" alt="Binay Pal">
+                <div class="img-badge">
+                    <span>🎓</span>
+                    <div>
+                        <p class="badge-title">B.Tech CSE</p>
+                        <p class="badge-sub">2021 – 2025</p>
+                    </div>
+                </div>
             </div>
+
             <div id="aboutSec">
+                <p class="section-label">Who I am</p>
                 <h1>About Me</h1>
                 <p>
-                    Hi, I'm Binay Pal, a passionate and driven B.Tech Computer Science Engineering student with a strong interest in full-stack development, AI integration, and building real-world applications that make life simpler and smarter.
+                    I'm a passionate and driven B.Tech Computer Science Engineering student specializing in <b>IoT & Cyber Security with Blockchain</b>. I love building products that sit at the intersection of AI, security, and great user experience.
                     <br><br>
-                    With a solid foundation in <b>HTML, CSS, JavaScript, React.js, Node.js</b> and databases like MySQL & MongoDB, I've worked on diverse projects ranging from an AI-powered trip planner to a fitness and diet recommendation system. These experiences have honed my skills in both frontend and backend development, as well as API integration and user-centric design.
+                    With a solid foundation in <b>HTML, CSS, JavaScript, React.js, Node.js</b> and databases like MySQL & MongoDB, I've shipped diverse projects — from an AI-powered trip planner to a women's safety app backed by blockchain.
                     <br><br>
-                    I love turning ideas into intuitive, functional digital solutions. Whether it's crafting responsive user interfaces or designing efficient backend architectures, I'm always excited to learn, build, and collaborate.
-                    <br><br>
-                    Currently, I'm expanding my knowledge in backend services, cloud deployment, and scalable architectures, with a goal to become a proficient Full Stack Developer.
+                    Currently expanding into cloud architecture, smart contracts, and scalable backend systems.
                 </p>
-            
+
                 <div id="contentTitle">
-                    <p class="desc activeLink" onclick="openTab('skill' , event)">Skills</p>
-                    <p class="desc" onclick="openTab('Experience' , event)">Experience</p>
-                    <p class="desc" onclick="openTab('Education' , event)">Education</p>
+                    <p class="desc activeLink" onclick="openTab('skill', event)">Skills</p>
+                    <p class="desc" onclick="openTab('Experience', event)">Experience</p>
+                    <p class="desc" onclick="openTab('Education', event)">Education</p>
                 </div>
 
-               <!-- Skills Section -->
+                <!-- Skills Tab -->
                 <div class="tab active" id="skill">
                     <div class="skills-scroll">
                         <ul>
-                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React.js</li>
-                            <li><span>Backend</span><br>Node.js, Express.js, REST APIs</li>
-                            <li><span>Databases</span><br>MySQL, MongoDB, SQLite</li>
-                            <li><span>Cloud & Deployment</span><br>Firebase, Render, Vercel, GitHub Pages</li>
-                            <li><span>UI/UX</span><br>Responsive design, Figma basics</li>
-                            <li><span>Other Tools</span><br>Git, GitHub, Postman, VS Code</li>
-                            <li><span>Extras</span><br>API Integration, Problem Solving</li>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
+                            <li><span>Backend</span><br>Node.js, Express.js, Flask, REST APIs, Socket.io</li>
+                            <li><span>Databases</span><br>MySQL, MongoDB, PostgreSQL, Firebase</li>
+                            <li><span>AI / ML</span><br>Python, scikit-learn, TensorFlow, Gemini API</li>
+                            <li><span>Blockchain</span><br>Solidity, Ethereum, Smart Contracts, Web3.js</li>
+                            <li><span>Cloud & Deploy</span><br>Firebase, Render, Vercel, Cloudinary, GitHub Pages</li>
+                            <li><span>Tools</span><br>Git, GitHub, Postman, VS Code, Figma</li>
                         </ul>
                     </div>
                 </div>
 
-                
-                <!-- Experience -->
+                <!-- Experience Tab -->
                 <div class="tab" id="Experience">
                     <ul>
-                        <li><span>Projects</span><br>AI Trip Planner, Fitness Recommendation System, Weather App</li>
-                        <li><span>Hackathons</span><br>Participated in SIH & college hackathons</li>
-                        <li><span>Internships</span><br>Worked on small-scale frontend/backend projects</li>
+                        <li><span>Featured Projects</span><br>SHEild, AI Trip Planner, LinkedIn Clone, Agri AI, FlexFit</li>
+                        <li><span>Hackathons</span><br>Smart India Hackathon (SIH) finalist + college hackathons</li>
+                        <li><span>Internships</span><br>Frontend & backend development on real-world client projects</li>
                     </ul>
                 </div>
 
-                <!-- Education -->
+                <!-- Education Tab -->
                 <div class="tab" id="Education">
                     <ul>
-                        <li><span>B.Tech (CSE)</span><br>Lokmanya Tilak College of Engineering</li>
-                        <li><span>Specialization</span><br>IoT & Cyber Security Including Blockchain</li>
-                        <li><span>Year</span><br>2021 – 2025 (Pursuing)</li>
+                        <li><span>B.Tech (CSE)</span><br>Lokmanya Tilak College of Engineering, Mumbai</li>
+                        <li><span>Specialization</span><br>IoT & Cyber Security including Blockchain</li>
+                        <li><span>Duration</span><br>2021 – 2025 (Pursuing)</li>
                     </ul>
                 </div>
+
+                <a href="images/my-cv.pdf" download class="cv">⬇ Download CV</a>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Section -->
+    <!-- ── SKILLS SHOWCASE (new section) ── -->
+    <div id="skills">
+        <div class="container">
+            <div class="title">
+                <p class="section-label">What I work with</p>
+                <h1>Tech Stack</h1>
+            </div>
+            <div id="skillsGrid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Redux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Flask</span>
+                        <span>Socket.io</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI / ML</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>scikit-learn</span>
+                        <span>TensorFlow</span>
+                        <span>Gemini API</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⛓️</div>
+                    <h3>Blockchain</h3>
+                    <div class="skill-tags">
+                        <span>Solidity</span>
+                        <span>Ethereum</span>
+                        <span>Web3.js</span>
+                        <span>Smart Contracts</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Firebase</span>
+                        <span>Vercel</span>
+                        <span>Cloudinary</span>
+                        <span>Git</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── PORTFOLIO ── -->
     <div id="portfolio">
         <div class="container">
-            <div class="title"><h1>My Work</h1></div>
-            <div id="workList">
-                <div class="work">
-                    <img src="images/work-1.png" >
-                    <div class="layer">
-                        <h3>Weather Website</h3>
-                        <p>A real-time weather web app built with OpenWeather API and JavaScript.</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" >
-                    <div class="layer">
-                        <h3>AI Trip Planner</h3>
-                        <p>Smart travel planning app with React Native & AI recommendations.</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" >
-                    <div class="layer">
-                        <h3>Fitness & Diet Recommender</h3>
-                        <p>A Flask app suggesting workouts & diet plans based on user data.</p>
-                    </div>
-                </div>
+            <div class="title">
+                <p class="section-label">What I've built</p>
+                <h1>Featured Projects</h1>
             </div>
-            <i class="btn">See more</i>
+            <div id="workList">
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="AI Trip Planner">
+                    <div class="layer">
+                        <span class="work-num">01</span>
+                        <h3>AI Trip Planner</h3>
+                        <p>Smart travel planning app powered by Google Gemini AI and Google Places API — generates personalized day-by-day itineraries based on budget, destination, and travel style.</p>
+                        <div class="work-tech">
+                            <span>React</span><span>Gemini AI</span><span>Firebase</span><span>Google Places</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/Binay0018" target="_blank">GitHub ↗</a>
+                            <a href="#" target="_blank">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="LinkedIn Clone">
+                    <div class="layer">
+                        <span class="work-num">02</span>
+                        <h3>LinkedIn Clone</h3>
+                        <p>Full-stack professional networking platform with real-time messaging, JWT auth, job board, connection requests, and Socket.io notifications.</p>
+                        <div class="work-tech">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/Binay0018" target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="SHEild Women Safety App">
+                    <div class="layer">
+                        <span class="work-num">03</span>
+                        <h3>SHEild</h3>
+                        <p>Women safety app with AI-powered threat detection and blockchain-verified emergency alerts — finalist at Smart India Hackathon.</p>
+                        <div class="work-tech">
+                            <span>React</span><span>Solidity</span><span>Node.js</span><span>ML</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/Binay0018" target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="Agri AI">
+                    <div class="layer">
+                        <span class="work-num">04</span>
+                        <h3>Agri AI</h3>
+                        <p>Crop disease detection and yield prediction system using ML models — helps farmers make data-driven decisions.</p>
+                        <div class="work-tech">
+                            <span>Flask</span><span>Python</span><span>scikit-learn</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/Binay0018" target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="FlexFit">
+                    <div class="layer">
+                        <span class="work-num">05</span>
+                        <h3>FlexFit</h3>
+                        <p>Smart workout and diet recommendation system tailored to user body metrics, goals, and fitness level.</p>
+                        <div class="work-tech">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/Binay0018" target="_blank">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="see-more">
+                <a href="https://github.com/Binay0018" target="_blank" class="btn-ghost">View All on GitHub ↗</a>
+            </div>
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- ── CONTACT ── -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="leftRow">
+                    <p class="section-label">Let's talk</p>
                     <h1>Contact Me</h1>
-                    <p>📧 Binaypal887@gmail.com</p>
-                    <p>📞 7738824018</p>
+                    <p class="contact-intro">I'm open to full-time roles, internships, and freelance projects. Have something exciting? Let's connect.</p>
 
-                    <!-- Social Media Links -->
-                    <div class="socialIcon">
-                      <!-- GitHub (white icon) -->
-                        <a href="https://github.com/Binay0018" class="icon" target="_blank">
-                            <img src="https://img.icons8.com/ios-glyphs/48/ffffff/github.png" 
-                                alt="GitHub" width="35">
+                    <div class="contact-items">
+                        <a href="mailto:Binaypal887@gmail.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-val">Binaypal887@gmail.com</p>
+                            </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/binay-kumar-pal-000426269/" class="icon" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="35">
-                        </a>
-                        <a href="https://twitter.com/your-username" class="icon" target="_blank">
-                            <img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter" width="35">
-                        </a>
-                        <a href="https://yourportfolio.com" class="icon" target="_blank">
-                            <img src="https://img.icons8.com/fluency/48/domain.png" alt="Portfolio" width="35">
+                        <a href="tel:+917738824018" class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-val">+91 7738824018</p>
+                            </div>
                         </a>
                     </div>
 
-                    <a href="images/my-cv.pdf" download class="cv">Download CV</a>
+                    <div class="socialIcon">
+                        <a href="https://github.com/Binay0018" class="icon" target="_blank" title="GitHub">
+                            <img src="https://img.icons8.com/ios-glyphs/48/ffffff/github.png" alt="GitHub" width="35">
+                        </a>
+                        <a href="https://www.linkedin.com/in/binay-kumar-pal-000426269/" class="icon" target="_blank" title="LinkedIn">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="35">
+                        </a>
+                        <a href="https://twitter.com/your-username" class="icon" target="_blank" title="Twitter">
+                            <img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter" width="35">
+                        </a>
+                    </div>
+
+                    <a href="images/my-cv.pdf" download class="cv">⬇ Download CV</a>
                 </div>
-                
+
                 <div class="rightRow">
-                    <form action="">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Enter your email-Id" required>
-                        <textarea name="Message" id="textArea" placeholder="Message" rows="6"></textarea>
-                        <button class="cv cv2">Submit</button>
+                    <form action="" id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <textarea name="Message" id="textArea" placeholder="Tell me about your project or opportunity..." rows="6"></textarea>
+                        <button type="submit" class="cv cv2">Send Message ✉</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- ── FOOTER ── -->
     <div class="copywrite">
-        <p>&copy; 2025 Binay Pal. All rights reserved.</p>
+        <div class="footer-inner">
+            <p>© 2025 <span>Binay Pal</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Binay0018" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/binay-kumar-pal-000426269/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </div>
-    
+
     <script src="index.js"></script>
 </body>
 </html>
