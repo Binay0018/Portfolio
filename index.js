@@ -148,4 +148,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 107a0c48390e6ef7142ebea367ebd21e1abfd54a
